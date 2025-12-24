@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+/* 1. Load the local font file */
+@font-face {
+  font-family: "Mouse Memoirs";
+  src: url("/fonts/MouseMemoirs-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  /* -- FONTS -- */
+  --font-house: "Mouse Memoirs", sans-serif;
+
+  /* -- COLORS -- */
+  --color-neutral-950: #000000;
+  --color-neutral-0: #ffffff;
+
+  --color-slate-950: #0b1524;
+  --color-slate-600: #243041;
+
+  --color-blue-600: #2463ff;
+  --color-blue-500: #5b8aff;
+
+  /* Note: The image listed Indigo 600 as #2463FF (same as Blue 600) */
+  --color-indigo-600: #261676;
+  --color-indigo-400: #887dc0;
+
+  /* -- GRADIENTS -- */
+  --background-image-gradient-1: linear-gradient(
+    180deg,
+    #344aba 0%,
+    rgba(0, 20, 121, 0.8) 100%
+  );
+  --background-image-gradient-2: linear-gradient(
+    180deg,
+    #67b6ff -7%,
+    #ffffff 108%
+  );
+  --background-image-gradient-3: linear-gradient(
+    180deg,
+    #fe71fe 16%,
+    #7199ff 100%
+  );
+  --background-image-gradient-4: linear-gradient(
+    180deg,
+    #ff95ff 0%,
+    #a3aeff 100%
+  );
+  --background-image-gradient-5: linear-gradient(
+    180deg,
+    #1a043a 0%,
+    #151278 70%,
+    #2b1677 100%
+  );
+
+  /* -- SPACING -- */
+  --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-625: 50px;
+  --spacing-700: 56px;
+  --spacing-750: 60px;
+  --spacing-800: 64px;
+
+  /* -- BORDER RADIUS -- */
+  --radius-0: 0px;
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-32: 32px;
+  --radius-40: 40px;
+  --radius-48: 48px;
+  --radius-72: 72px;
+  --radius-96: 96px;
+  --radius-full: 999px;
+
+  /* -- TYPOGRAPHY PRESETS -- */
+
+  /* Preset 1 */
+  --text-preset-1: 136px;
+  --text-preset-1--line-height: 1.2;
+  --text-preset-1--tracking: -1px;
+
+  /* Preset 2 */
+  --text-preset-2: 104px;
+  --text-preset-2--line-height: 1.2;
+  --text-preset-2--tracking: -1px;
+
+  /* Preset 3 */
+  --text-preset-3: 94px;
+  --text-preset-3--line-height: 1.2;
+  --text-preset-3--tracking: -1px;
+
+  /* Preset 4 */
+  --text-preset-4: 88px;
+  --text-preset-4--line-height: 1.2;
+  --text-preset-4--tracking: 0px;
+
+  /* Preset 5 */
+  --text-preset-5: 64px;
+  --text-preset-5--line-height: 1.2;
+  --text-preset-5--tracking: 2.5px;
+
+  /* Preset 6 */
+  --text-preset-6: 48px;
+  --text-preset-6--line-height: 1.2;
+  --text-preset-6--tracking: 2.5px;
+
+  /* Preset 7 */
+  --text-preset-7: 40px;
+  --text-preset-7--line-height: 1.2;
+  --text-preset-7--tracking: 1.75px;
+
+  /* Preset 8 */
+  --text-preset-8: 32px;
+  --text-preset-8--line-height: 1.2;
+  --text-preset-8--tracking: 1.75px;
+
+  /* Preset 9 */
+  --text-preset-9: 26px;
+  --text-preset-9--line-height: 1.2;
+  --text-preset-9--tracking: 0.75px;
+
+  /* Preset 10 */
+  --text-preset-10: 24px;
+  --text-preset-10--line-height: 1.2;
+  --text-preset-10--tracking: 0.75px;
+
+  /* Preset 11 */
+  --text-preset-11: 20px;
+  --text-preset-11--line-height: 1.2;
+  --text-preset-11--tracking: 0.75px;
+
+  /* Preset 12 */
+  --text-preset-12: 16px;
+  --text-preset-12--line-height: 1.2;
+  --text-preset-12--tracking: 0.75px;
+}
+
+.text-stroke-style {
+  background-image: var(--background-image-gradient-2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-slate-600);
+}
+
+@media (min-width: 768px) {
+  .text-stroke-style {
+    -webkit-text-stroke: 4px var(--color-slate-600);
+  }
+}
